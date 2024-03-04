@@ -11,6 +11,10 @@ class Product(models.Model):
     desc = models.CharField(max_length=300)
     pub_date = models.DateField()
     image = models.ImageField(upload_to='shop/images',default="")
-
     def __str__(self):
         return self.Product_name
+
+class Order(models.Model):
+        Order_id = models.AutoField
+        def __str__(self):
+            return self.Order_id
