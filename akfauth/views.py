@@ -90,7 +90,7 @@ def handellogin(request):
         if myuser is not None:
             login(request, myuser)
             messages.success(request, "Login Success")
-            return render(request, 'index.html')
+            return redirect('index')
         else:
             messages.error(request, "Invalid Credentials")
     return render(request, 'auth/login.html')

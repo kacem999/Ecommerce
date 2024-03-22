@@ -54,7 +54,7 @@
             <!-- <a href="index.html"><img src="{ static 'assets/img/logo.png' }" alt="" class="img-fluid"></a>-->
         </div>
 
-                <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link scrollto active" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" href="/about">About</a></li>
@@ -63,7 +63,7 @@
                 <li><a class="nav-link scrollto" href="#pricing">Tracker</a></li>
                 {% if request.user.is_authenticated %}
                     <li><a class="getstarted scrollto" href="">Wellcome {{ user.username }}</a></li>
-                    <li><a class="nav-link scrollto text-danger" href="{% url 'logout' %}">Logout</a></li>
+                    <li><a class="nav-link scrollto text-danger" href="{% url 'logout' %}">LOGOUT</a></li>
                     <button type="button" class="btn btn-dark m-3" id="popcart" data-container="body"
                             data-toggle="popover" data-placement="bottom" data-html="true"
                             data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -79,7 +79,7 @@
     </div>
 </header><!-- End Header -->
 {% block body %}
-	
+
 {% endblock %}
 
 

@@ -11,7 +11,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{% static 'assets/img/iconWeb.png' %}" rel="icon">
+    <img href="{% static 'assets/img/Untitled_design.png' %}" rel="icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -55,20 +55,19 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link scrollto active" href="/">Home</a></li>
-                <li><a class="nav-link scrollto" href="/about">About</a></li>
+                <li><a class="nav-link scrollto" href="/">About</a></li>
                 <li><a class="nav-link scrollto" href="{% url 'purchase' %}">Purchase</a></li>
                 <li><a class="nav-link scrollto" href="{% url 'checkout' %}">Checkout</a></li>
                 <li><a class="nav-link scrollto" href="#pricing">Tracker</a></li>
                 {% if request.user.is_authenticated %}
                     <li><a class="getstarted scrollto" href="">Wellcome {{ user.username }}</a></li>
-                    <li><a class="nav-link scrollto text-danger" href="{% url 'logout' %}">Logout</a></li>
+                    <li><a class="nav-link scrollto text-danger" href="{% url 'logout' %}">LOGOUT</a></li>
                 {% else %}
                     <li><a class="getstarted scrollto" href="{% url 'signup' %}">Sign up</a></li>
                 {% endif %}
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-
     </div>
 </header><!-- End Header -->
 
